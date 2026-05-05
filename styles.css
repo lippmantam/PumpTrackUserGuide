@@ -398,3 +398,174 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--text-secondary);
 }
+
+/* ── Tip callout ── */
+.tip {
+    background: #eff6ff;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 0 6px 6px 0;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+}
+
+.tip::before {
+    content: "Tip \2014  ";
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* ── Warning callout ── */
+.warning {
+    background: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    border-radius: 0 6px 6px 0;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+}
+
+.warning strong {
+    color: #92400e;
+}
+
+/* ── UI element / button labels ── */
+kbd {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-bottom-width: 2px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    padding: 1px 7px;
+    white-space: nowrap;
+}
+
+/* ── Track reference table ── */
+.track-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0 24px;
+    font-size: 0.9rem;
+}
+
+.track-table thead th {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+.track-table thead th:first-child { border-radius: 6px 0 0 0; }
+.track-table thead th:last-child  { border-radius: 0 6px 0 0; }
+
+.track-table td {
+    border: 1px solid var(--border-color);
+    padding: 9px 14px;
+    color: var(--text-secondary);
+}
+
+.track-table tr:nth-child(even) td {
+    background: var(--bg-secondary);
+}
+
+/* ── Numbered step circles ── */
+article ol {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: step-counter;
+}
+
+article ol > li {
+    counter-increment: step-counter;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 14px;
+}
+
+article ol > li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 1px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article ol > li > ul {
+    padding-left: 16px;
+}
+
+/* ── FAQ accordion ── */
+.faq-list {
+    border-top: 1px solid var(--border-color);
+    margin-top: 8px;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.faq-item > summary {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    padding: 16px 40px 16px 0;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    user-select: none;
+}
+
+.faq-item > summary::-webkit-details-marker { display: none; }
+.faq-item > summary::marker { display: none; }
+
+.faq-item > summary::after {
+    content: "+";
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.faq-item[open] > summary::after {
+    content: "\2212";
+}
+
+.faq-item > summary:hover {
+    color: var(--primary-color);
+}
+
+.faq-answer {
+    padding: 4px 0 16px;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+/* ── Section intro ── */
+.section-intro {
+    font-style: italic;
+    color: var(--text-light);
+    margin-top: -16px;
+    margin-bottom: 28px;
+    font-size: 0.9375rem;
+}
