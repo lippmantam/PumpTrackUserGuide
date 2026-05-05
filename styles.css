@@ -87,6 +87,17 @@ header {
     padding: 24px 0;
 }
 
+.nav-group-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-light);
+    padding: 20px 24px 4px;
+    pointer-events: none;
+    user-select: none;
+}
+
 .nav-links {
     list-style: none;
 }
