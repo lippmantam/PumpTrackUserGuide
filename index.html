@@ -52,6 +52,7 @@
 
     <main>
         <article>
+
             <section id="intro">
                 <p class="lead">PumpTrack is a workout tracking app designed for BodyPump&reg; classes, BodyPump&reg; Heavy sessions, and bodybuilding workouts. This guide walks you through all features.</p>
                 <div class="callout">
@@ -61,25 +62,18 @@
 
             <section id="getting-started">
                 <h2>Getting Started</h2>
+                <p class="section-intro">Your first-day setup and a tour of the Home screen.</p>
                 <p>Use this section for your first-day setup, then move to session logging. The app auto-saves throughout normal use.</p>
                 <p>When you first open PumpTrack, you'll see the Home screen with:</p>
                 <ul>
                     <li><strong>Start New Session</strong> button to begin a workout</li>
                     <li><strong>Recent Sessions</strong> list showing your latest workouts</li>
-                    <li><strong>Navigation links</strong> to:
-                        <ul>
-                            <li>About PumpTrack</li>
-                            <li>Workout Calendar</li>
-                            <li>Measurements</li>
-                            <li>View Full History</li>
-                            <li>Exercise catalog</li>
-                        </ul>
-                    </li>
+                    <li><strong>Navigation links</strong> to About PumpTrack, Workout Calendar, Measurements, View Full History, and Exercise catalog</li>
                 </ul>
 
                 <h3>Home Screen Overview</h3>
                 <ul>
-                    <li>Tap <strong>Start New Session</strong> to create a new workout</li>
+                    <li>Tap <kbd>Start New Session</kbd> to create a new workout</li>
                     <li>Tap any recent session to continue or review it</li>
                     <li>Tap the gear icon (top right) to access Settings</li>
                 </ul>
@@ -87,36 +81,52 @@
 
             <section id="quick-start-in-5-minutes">
                 <h2>Quick Start in 5 Minutes</h2>
-                <p>Follow this short path if you want to log your first workout right away.</p>
-                <ol class="checklist">
-                    <li>Open <strong>Settings</strong> and set your default weight unit (LB or KG).</li>
-                    <li>In <strong>Gear Setup</strong>, add your available plates and dumbbells.</li>
-                    <li>Return Home and tap <strong>Start New Session</strong>.</li>
-                    <li>Select your workout type and tap <strong>Create Blank Session</strong>.</li>
-                    <li>Add at least one exercise with <strong>+</strong>, then enter weight and effort.</li>
-                    <li>Complete the workout and verify it appears in <strong>View Full History</strong>.</li>
+                <p class="section-intro">From zero to your first logged workout in five minutes.</p>
+                <ol>
+                    <li>Open <kbd>Settings</kbd> (gear icon on Home) and set your default weight unit (LB or KG).</li>
+                    <li>In <kbd>Gear Setup</kbd>, add your available plates and dumbbells.</li>
+                    <li>Return Home and tap <kbd>Start New Session</kbd>.</li>
+                    <li>Select your workout type and tap <kbd>Create Blank Session</kbd>.</li>
+                    <li>Add at least one exercise with <kbd>+</kbd>, then enter weight and effort.</li>
+                    <li>Complete the workout and verify it appears in <kbd>View Full History</kbd>.</li>
                 </ol>
-                <p class="muted">Tip: If you train a similar format weekly, use <strong>Clone workout</strong> to speed up session setup next time.</p>
+                <p class="tip">If you train a similar format weekly, use <kbd>Clone workout</kbd> to speed up session setup next time.</p>
             </section>
 
             <section id="how-the-app-works">
                 <h2>How the App Works</h2>
-                <p>PumpTrack organizes workouts around the structure of the class or program you're doing — not a generic exercise list. Understanding this structure makes the rest of the app click into place.</p>
+                <p class="section-intro">The structure behind sessions, tracks, and the weekly training loop.</p>
+                <p>PumpTrack organizes workouts around the structure of the class or program you're doing — not a generic exercise list. Understanding this makes the rest of the app click into place.</p>
 
                 <h3>Tracks and Sections</h3>
-                <p>A BodyPump&reg; class is divided into <strong>tracks</strong> — Warmup, Squats, Chest, Back, Triceps, Biceps, Lunges/Glutes, Shoulders, and Core. Each track targets a specific body part and typically uses a barbell, dumbbells, or both.</p>
-                <p>PumpTrack mirrors this exactly. When you create a BodyPump&reg; session, the app builds one <strong>section</strong> per track. Inside each section you add the exercises you're doing — usually one per track, but you can add more. After each track in class, you open that section and log your weight and effort.</p>
+                <p>A BodyPump&reg; class is divided into <strong>tracks</strong>, each targeting a specific body part. PumpTrack mirrors this exactly: one section per track, with exercises you add inside each one. After each track in class, you open that section and log your weight and effort.</p>
+
+                <table class="track-table">
+                    <thead>
+                        <tr><th>Track</th><th>Focus</th><th>Typical Equipment</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Warmup</td><td>Full body</td><td>Barbell + plates</td></tr>
+                        <tr><td>Squats</td><td>Legs</td><td>Barbell + plates</td></tr>
+                        <tr><td>Chest</td><td>Chest</td><td>Barbell + plates</td></tr>
+                        <tr><td>Back</td><td>Back</td><td>Barbell + plates</td></tr>
+                        <tr><td>Triceps</td><td>Triceps</td><td>Barbell + plates</td></tr>
+                        <tr><td>Biceps</td><td>Biceps</td><td>Barbell + plates</td></tr>
+                        <tr><td>Glutes</td><td>Glutes / legs</td><td>Barbell + plates</td></tr>
+                        <tr><td>Shoulders</td><td>Shoulders</td><td>Barbell + plates</td></tr>
+                        <tr><td>Core</td><td>Core / abs</td><td>Body weight</td></tr>
+                    </tbody>
+                </table>
 
                 <h3>Exercises and Entries</h3>
-                <p>An <strong>exercise</strong> is a movement from your library (e.g., "Barbell Squat" or "Dumbbell Curl"). An <strong>entry</strong> is a single logged instance of that exercise in a session — with a weight, unit, effort score, and optional notes.</p>
-                <p>When you clone a past session, all your exercises carry forward with last week's weights pre-filled. You log on top of that: match, increase, or note a change.</p>
+                <p>An <strong>exercise</strong> is a movement from your library (e.g., "Barbell Squat"). An <strong>entry</strong> is a single logged instance in a session — weight, unit, effort score, and optional notes. When you clone a past session, all entries carry forward with last week's weights pre-filled.</p>
 
                 <h3>Session Types</h3>
                 <ul>
-                    <li><strong>BodyPump&reg;</strong> — Nine tracks in fixed order, one section per track. Best for standard Les Mills classes.</li>
-                    <li><strong>BodyPump&reg; Heavy</strong> — Same tracks, but grouped into <em>blocks</em>: clusters of tracks done in sequence before a full rest. You define the block structure before the session.</li>
-                    <li><strong>Bodybuilding</strong> — Sections by muscle group, no fixed order. Choose which groups to include for each session.</li>
-                    <li><strong>Custom</strong> — Free-form. Add any exercises to a single open session.</li>
+                    <li><strong>BodyPump&reg;</strong> — Nine tracks in fixed order. Best for standard Les Mills classes.</li>
+                    <li><strong>BodyPump&reg; Heavy</strong> — Same tracks grouped into <em>blocks</em> done in sequence before a full rest. You define the block structure before the session.</li>
+                    <li><strong>Bodybuilding</strong> — Sections by muscle group, no fixed order. Choose which groups to include each session.</li>
+                    <li><strong>Custom</strong> — Free-form. Add any exercises to a single open section.</li>
                 </ul>
 
                 <h3>The Core Loop</h3>
@@ -124,281 +134,248 @@
                     <li>Clone last week's session (or create a new one).</li>
                     <li>Check the pre-class gear list and set out your plates.</li>
                     <li>During class, log weight and effort for each track as it ends.</li>
-                    <li>Tap <strong>Complete Workout</strong> when done.</li>
+                    <li>Tap <kbd>Complete Workout</kbd> when done.</li>
                     <li>Next week, clone again — your weights are waiting.</li>
                 </ol>
             </section>
 
             <section id="creating-a-new-session">
                 <h2>Creating a New Session</h2>
+                <p class="section-intro">Choose your workout type — the app builds the right structure for you.</p>
                 <ol>
-                    <li>From Home, tap <strong>Start New Session</strong></li>
+                    <li>From Home, tap <kbd>Start New Session</kbd>.</li>
                     <li>Fill in session details:
                         <ul>
                             <li><strong>Workout name</strong> — Edit the default name or enter your own</li>
-                            <li><strong>Workout type</strong> — Choose from:
-                                <ul>
-                                    <li><strong>BodyPump&reg;</strong> — Standard BodyPump&reg; class format</li>
-                                    <li><strong>BodyPump&reg; Heavy</strong> — Heavy format with block planning</li>
-                                    <li><strong>Bodybuilding</strong> — Custom bodybuilding workout</li>
-                                    <li><strong>Custom</strong> — General workout</li>
-                                </ul>
-                            </li>
+                            <li><strong>Workout type</strong> — BodyPump&reg;, BodyPump&reg; Heavy, Bodybuilding, or Custom</li>
                             <li><strong>Date</strong> — Select the workout date</li>
-                            <li><strong>Notes</strong> — Optional notes for the session</li>
+                            <li><strong>Notes</strong> — Optional session notes</li>
                         </ul>
                     </li>
-                    <li>Tap <strong>Create Blank Session</strong> to start</li>
+                    <li>Tap <kbd>Create Blank Session</kbd> to start.</li>
                 </ol>
 
                 <h3>Bodybuilding Options</h3>
-                <p>When selecting <strong>Bodybuilding</strong>, you can choose which muscle groups to include:</p>
+                <p>When selecting <strong>Bodybuilding</strong>, choose which muscle groups to include:</p>
                 <ul>
-                    <li>Tap <strong>Visible groups</strong> to select/deselect body parts</li>
+                    <li>Tap <kbd>Visible groups</kbd> to select or deselect body parts</li>
                     <li>Only selected groups appear in your workout</li>
                     <li>You can change this later from session detail</li>
                 </ul>
 
-                <h3>BodyPump&reg; Heavy Options</h3>
-                <p>When selecting <strong>BodyPump&reg; Heavy</strong>, you define <strong>blocks</strong> before the session starts. A block is a group of tracks done in sequence — for example, Chest + Back + Squats cycled through before a full rest.</p>
-                <p>The default plan has five blocks (Warmup + four working blocks). To customize:</p>
+                <h3>BodyPump&reg; Heavy — Block Designer</h3>
+                <p>A <strong>block</strong> is a group of tracks done in sequence before a full rest — for example, Chest + Back + Squats cycled through together. The default plan has five blocks (Warmup + four working blocks). To customize:</p>
                 <ol>
-                    <li>Tap <strong>Block combinations</strong> to open the block designer</li>
-                    <li>Tap any track name within a block to change it to a different track</li>
-                    <li>Tap <strong>+ Add block</strong> to add a new block to the plan</li>
-                    <li>Tap the <strong>−</strong> button on a block to remove it</li>
-                    <li>Tap <strong>Reset</strong> to return to the default plan</li>
-                    <li>Tap <strong>Save</strong> when done</li>
+                    <li>Tap <kbd>Block combinations</kbd> to open the block designer.</li>
+                    <li>Tap any track name within a block to swap it for a different track.</li>
+                    <li>Tap <kbd>+ Add block</kbd> to add a new block.</li>
+                    <li>Tap <kbd>−</kbd> on a block to remove it.</li>
+                    <li>Tap <kbd>Reset</kbd> to restore the default plan.</li>
+                    <li>Tap <kbd>Save</kbd> when done.</li>
                 </ol>
-                <p class="muted">Tip: You can also redesign blocks from within an open session using the Redesign blocks option in session detail.</p>
+                <p class="tip">You can also redesign blocks from within an open session using <kbd>Redesign blocks</kbd> in session detail.</p>
             </section>
 
             <section id="logging-your-workout">
                 <h2>Logging Your Workout</h2>
+                <p class="section-intro">Tap an exercise row to log weight and effort — everything else is automatic.</p>
 
                 <h3>Viewing Your Workout</h3>
                 <p>When you open a session, you'll see:</p>
                 <ul>
                     <li><strong>Workout name and type</strong> at the top</li>
-                    <li><strong>Date</strong> (tap "Edit" to change)</li>
-                    <li><strong>Pre-class gear</strong> checklist (for BodyPump&reg;/BodyPump&reg; Heavy)</li>
-                    <li><strong>Exercises</strong> organized by track/body part</li>
+                    <li><strong>Date</strong> — tap <kbd>Edit</kbd> to change it</li>
+                    <li><strong>Pre-class gear</strong> checklist (for BodyPump&reg; sessions)</li>
+                    <li><strong>Exercises</strong> organized by track or body part</li>
                     <li><strong>Session notes</strong> at the bottom</li>
                 </ul>
 
                 <h3>Exercise Sections</h3>
-                <p>Each track/body part is a collapsible section:</p>
                 <ul>
-                    <li><strong>Tap the chevron</strong> to expand/collapse a section</li>
-                    <li><strong>Tap +</strong> to add an exercise to that section</li>
-                    <li><strong>Tap the checkmark</strong> in the section header to complete all exercises in that section at once</li>
+                    <li>Tap the <strong>chevron</strong> to expand or collapse a section</li>
+                    <li>Tap <kbd>+</kbd> to add an exercise to a section</li>
+                    <li>Tap the <strong>checkmark</strong> in a section header to complete all exercises in that section at once</li>
                 </ul>
 
                 <h3>Adding Weight and Effort</h3>
                 <ol>
-                    <li><strong>Tap an exercise row</strong> to open the entry editor</li>
-                    <li>Enter:
-                        <ul>
-                            <li><strong>Weight</strong> — Use the number pad or quick-weight chips</li>
-                            <li><strong>Effort</strong> (1–10) — Your RPE rating for this exercise (see below)</li>
-                            <li><strong>Notes</strong> — Optional notes for that exercise</li>
-                        </ul>
-                    </li>
-                    <li><strong>Tap the unit chip</strong> (LB/KG) beside the weight field to switch units</li>
-                    <li>Weight and effort are <strong>auto-saved</strong> as you enter them</li>
+                    <li>Tap an exercise row to open the entry editor.</li>
+                    <li>Enter <strong>Weight</strong> using the number pad or quick-weight chips, and <strong>Effort</strong> (1–10) — see below.</li>
+                    <li>Tap the <kbd>LB</kbd> / <kbd>KG</kbd> chip beside the weight field to switch units.</li>
+                    <li>Add optional <strong>Notes</strong> for that exercise.</li>
+                    <li>Weight and effort <strong>auto-save</strong> as you enter them.</li>
                 </ol>
 
                 <h3>Understanding Effort (RPE 1–10)</h3>
-                <p>Effort is a <strong>Rate of Perceived Exertion</strong> (RPE) score — how hard the exercise felt on a 1–10 scale:</p>
+                <p>Effort is a <strong>Rate of Perceived Exertion</strong> (RPE) score — how hard the exercise felt:</p>
                 <ul>
                     <li><strong>1–4</strong> — Easy, warm-up level; you could keep going indefinitely</li>
                     <li><strong>5–6</strong> — Moderate, working but comfortable</li>
-                    <li><strong>7–8</strong> — Hard; the last few reps are challenging</li>
+                    <li><strong>7–8</strong> — Hard; the last few reps are a challenge</li>
                     <li><strong>9–10</strong> — Near-maximum or maximum effort</li>
                 </ul>
-                <p>For BodyPump&reg; working tracks, most people land between 6 and 9. <strong>Both weight and effort are required</strong> before the app will let you mark an exercise complete — effort alongside weight tells a more complete story than weight alone.</p>
-
-                <h3>Quick Weight Chips</h3>
-                <p>The entry editor shows quick-select chips for common weights:</p>
-                <ul>
-                    <li>Chips are based on your configured plate and dumbbell options in Settings</li>
-                    <li>Available when editing barbell or dumbbell exercises</li>
-                    <li>If chips are missing, check that your gear inventory is set up in <strong>Settings → Gear Setup</strong></li>
-                </ul>
+                <p>For BodyPump&reg; working tracks, most people land between 6 and 9.</p>
 
                 <h3>Marking Exercises Complete</h3>
+                <div class="warning">
+                    <p><strong>Both weight and effort (1–10) are required</strong> before you can mark an exercise complete. If either is missing, the completion circle won't respond — enter both values first.</p>
+                </div>
                 <ul>
                     <li>Tap the <strong>circle icon</strong> next to an exercise to toggle completion</li>
-                    <li><strong>Requirement:</strong> weight AND effort (1–10) must both be entered</li>
-                    <li>If you try to complete without both, you'll see an error message</li>
                     <li>Tap the <strong>checkmark</strong> in a section header to complete all exercises in that section at once</li>
                 </ul>
 
+                <h3>Quick Weight Chips</h3>
+                <ul>
+                    <li>Shown in the entry editor for barbell and dumbbell exercises</li>
+                    <li>Based on your configured plate and dumbbell options in Settings</li>
+                    <li>If chips are missing, check <strong>Settings → Gear Setup</strong></li>
+                </ul>
+
                 <h3>Previous Weight Recall</h3>
-                <p>When you tap an exercise, PumpTrack automatically shows your previous weight for that exercise — "Last used: X lb." This is pulled from the most recent matching session.</p>
-                <p class="muted">Tip: Previous weights are matched by track name and exercise order. Use <strong>Clone workout</strong> rather than starting a new session to keep this matching reliable.</p>
+                <p>When you tap an exercise, PumpTrack shows your previous weight — "Last used: X lb" — pulled from the most recent matching session.</p>
+                <p class="tip">Previous weights are matched by track name and exercise order. Use <kbd>Clone workout</kbd> rather than creating a fresh session to keep matching reliable.</p>
             </section>
 
             <section id="working-with-exercises">
                 <h2>Working with Exercises</h2>
+                <p class="section-intro">Add, change, reorder, and remove exercises within any session.</p>
 
-                <h3>Adding a New Exercise</h3>
+                <h3>Adding an Exercise</h3>
                 <ol>
-                    <li>Tap the <strong>+</strong> button in any section</li>
-                    <li>Choose how to add:
-                        <ul>
-                            <li><strong>Search the library</strong> — Find an existing exercise</li>
-                            <li><strong>Custom</strong> — Enter a new exercise name</li>
-                        </ul>
-                    </li>
-                    <li>The new exercise is automatically added to your library for future use</li>
+                    <li>Tap <kbd>+</kbd> in any section.</li>
+                    <li>Search the library for an existing exercise, or tap <kbd>Custom</kbd> to enter a new name.</li>
+                    <li>The exercise is automatically added to your library for future sessions.</li>
                 </ol>
 
                 <h3>Changing an Exercise</h3>
                 <ol>
-                    <li>Tap an exercise row to open the editor</li>
-                    <li>Tap <strong>Change exercise...</strong></li>
-                    <li>Select a different exercise from the library</li>
-                    <li>Your weight/effort is preserved unless you clear it</li>
+                    <li>Tap the exercise row to open the editor.</li>
+                    <li>Tap <kbd>Change exercise...</kbd>.</li>
+                    <li>Select a replacement from the library. Your weight and effort are preserved unless you clear them.</li>
                 </ol>
 
                 <h3>Reordering Exercises</h3>
                 <ul>
-                    <li><strong>Within a section:</strong> Long-press and drag to reorder</li>
+                    <li>Long-press and drag a row to reorder exercises within a section</li>
                 </ul>
 
                 <h3>Removing an Exercise</h3>
                 <ol>
-                    <li>Tap the exercise row to open the editor</li>
-                    <li>Scroll down and tap <strong>Remove exercise</strong></li>
-                    <li>Confirm when prompted</li>
+                    <li>Tap the exercise row to open the editor.</li>
+                    <li>Scroll down and tap <kbd>Remove exercise</kbd>.</li>
+                    <li>Confirm when prompted.</li>
                 </ol>
             </section>
 
             <section id="pre-class-gear-checklist">
                 <h2>Pre-Class Gear Checklist</h2>
-                <p>The gear checklist appears at the top of any BodyPump&reg; or BodyPump&reg; Heavy session. It calculates exactly which plates and dumbbells you'll need for the entire workout — so you can set everything out before class starts, rather than scrambling between tracks.</p>
+                <p class="section-intro">One consolidated list of everything you need before class — no guesswork.</p>
+                <p>The gear checklist appears at the top of any BodyPump&reg; or BodyPump&reg; Heavy session. It calculates exactly which plates and dumbbells you need for the entire workout — set everything out once before class, not between tracks.</p>
 
                 <h3>Setup (Do This Once)</h3>
-                <p>The checklist needs to know what equipment you have before it can build the list. In <strong>Settings → Gear Setup</strong>:</p>
+                <p>In <strong>Settings → Gear Setup</strong>:</p>
                 <ol>
-                    <li>Set <strong>Barbell weight input</strong> to match how you enter weights:
+                    <li>Set <strong>Barbell weight input</strong> to match how you log weights:
                         <ul>
-                            <li><strong>Per side</strong> — You enter the weight loaded on each side (e.g., 20 kg means 20 kg per side)</li>
-                            <li><strong>Total barbell</strong> — You enter the full loaded weight including the bar</li>
+                            <li><strong>Per side</strong> — you enter the weight on each side (20 kg = 20 per side)</li>
+                            <li><strong>Total barbell</strong> — you enter the full loaded weight including the bar</li>
                         </ul>
                     </li>
-                    <li>Under <strong>Available plates</strong>, add every plate size at your gym</li>
-                    <li>Under <strong>Available dumbbells</strong>, add the dumbbell weights available to you</li>
+                    <li>Under <strong>Available plates</strong>, add every plate size at your gym.</li>
+                    <li>Under <strong>Available dumbbells</strong>, add the dumbbell weights available to you.</li>
                 </ol>
 
                 <h3>How the Math Works</h3>
-                <p>For each exercise in your session that has a weight logged, the checklist works out which plate combination makes up that weight using the sizes you've configured. It then builds a consolidated list across the whole session.</p>
-                <p><strong>Reuse is accounted for:</strong> if two sequential exercises use the same plate configuration, the plates are counted once — not duplicated. You carry what you actually need to set out, not a worst-case total.</p>
+                <p>For each exercise with a weight logged, the checklist calculates the plate combination that makes up that weight. It then consolidates across the whole session. <strong>Reuse is accounted for:</strong> if two sequential exercises share a plate configuration, those plates are counted once — you carry only what you actually need.</p>
 
                 <h3>When the Checklist Looks Wrong</h3>
                 <ul>
-                    <li><strong>No items appear:</strong> You may not have weights logged yet, or gear inventory isn't configured. Open Settings → Gear Setup and confirm plates and dumbbells are added.</li>
-                    <li><strong>Wrong plate breakdown:</strong> Check that the barbell input mode (per-side vs. total) matches how you're entering weights in the entry editor.</li>
-                    <li><strong>An exercise is missing:</strong> Only exercises with a weight entered appear in the checklist. Exercises with no weight logged are excluded.</li>
+                    <li><strong>Nothing appears:</strong> Gear inventory isn't configured or no weights are logged yet. Go to <strong>Settings → Gear Setup</strong> and add plates and dumbbells.</li>
+                    <li><strong>Wrong plate breakdown:</strong> Check that barbell input mode (per side vs. total) matches how you're entering weights.</li>
+                    <li><strong>An exercise is missing:</strong> Only exercises with a weight entered show up. Log a weight first.</li>
                 </ul>
             </section>
 
             <section id="completing-a-workout">
                 <h2>Completing a Workout</h2>
+                <p class="section-intro">Finish, clone, refresh, or delete a session.</p>
 
-                <h3>Complete All Tracks</h3>
-                <p>When you've logged weight and effort for all exercises:</p>
+                <h3>Complete Workout</h3>
                 <ol>
-                    <li>Scroll to the bottom of the session</li>
-                    <li>Tap <strong>Complete Workout</strong></li>
-                    <li>All eligible exercises are marked as complete</li>
-                    <li>The session is saved to your history</li>
+                    <li>Scroll to the bottom of the session.</li>
+                    <li>Tap <kbd>Complete Workout</kbd>.</li>
+                    <li>All eligible exercises are marked complete and the session is saved to history.</li>
                 </ol>
 
                 <h3>Clone a Workout</h3>
-                <p>Need to repeat a workout? Use Clone:</p>
                 <ol>
-                    <li>Tap <strong>More...</strong> menu</li>
-                    <li>Select <strong>Clone workout</strong></li>
-                    <li>A copy is created with all exercises and last session's weights, but completion cleared</li>
+                    <li>Tap <kbd>More...</kbd>.</li>
+                    <li>Select <kbd>Clone workout</kbd>.</li>
+                    <li>A copy is created with all exercises and last session's weights, but completion cleared.</li>
                 </ol>
 
                 <h3>Refresh from Latest</h3>
-                <p>Updates the weights in the current session from your most recent matching workout, without creating a new session:</p>
+                <p>Updates weights in the current session from your most recent matching workout — without creating a new session:</p>
                 <ol>
-                    <li>Tap <strong>More...</strong> menu</li>
-                    <li>Select <strong>Refresh from latest</strong></li>
-                    <li>Matching exercises are updated with previous weights and effort</li>
+                    <li>Tap <kbd>More...</kbd>.</li>
+                    <li>Select <kbd>Refresh from latest</kbd>.</li>
+                    <li>Matching exercises are updated with previous weights and effort.</li>
                 </ol>
 
                 <h3>Delete a Workout</h3>
                 <ol>
-                    <li>Tap <strong>More...</strong> menu</li>
-                    <li>Select <strong>Delete workout</strong></li>
-                    <li>The workout is moved to "removed" status</li>
-                    <li>You can recall it within 30 days from History</li>
+                    <li>Tap <kbd>More...</kbd>.</li>
+                    <li>Select <kbd>Delete workout</kbd>.</li>
+                    <li>The workout moves to "removed" status. You can recall it within 30 days from History.</li>
                 </ol>
             </section>
 
             <section id="viewing-history">
                 <h2>Viewing History</h2>
-                <p>Access <strong>View Full History</strong> from the Home screen:</p>
+                <p class="section-intro">Browse past sessions, edit historical data, and recover deleted workouts.</p>
+                <p>Access <kbd>View Full History</kbd> from the Home screen.</p>
 
                 <h3>History Features</h3>
                 <ul>
-                    <li><strong>Filter by workout type</strong> — Tap the filter to show All/BodyPump&reg;/BodyPump&reg; Heavy/Bodybuilding/Custom</li>
+                    <li><strong>Filter by workout type</strong> — All / BodyPump&reg; / BodyPump&reg; Heavy / Bodybuilding / Custom</li>
                     <li><strong>Show removed</strong> — Toggle to see deleted workouts you can recall</li>
-                    <li><strong>Export CSV</strong> — Export your history for spreadsheet analysis</li>
+                    <li><strong>Export CSV</strong> — Export your full history as a spreadsheet</li>
                     <li><strong>Edit mode</strong> — Swipe to delete or permanently remove workouts</li>
                 </ul>
 
                 <h3>Editing a Past Workout</h3>
                 <p>History is read-only by default to prevent accidental edits. To modify a past session:</p>
                 <ol>
-                    <li>Tap the workout in History</li>
-                    <li>Tap <strong>Edit</strong> in the top-right</li>
-                    <li>Make your changes — they save automatically</li>
+                    <li>Tap the workout in History.</li>
+                    <li>Tap <kbd>Edit</kbd> in the top-right.</li>
+                    <li>Make your changes — they save automatically.</li>
                 </ol>
-                <p class="muted">Tip: If you want to experiment without affecting the original, use Clone instead of Edit.</p>
+                <p class="tip">To experiment without affecting the original, use <kbd>Clone</kbd> instead of <kbd>Edit</kbd>.</p>
 
                 <h3>Recalling a Deleted Workout</h3>
                 <ol>
-                    <li>Enable <strong>Show removed</strong> in History</li>
-                    <li>Tap the deleted workout</li>
-                    <li>Tap <strong>Recall</strong> to restore it to your history</li>
+                    <li>Enable <kbd>Show removed</kbd> in History.</li>
+                    <li>Tap the deleted workout.</li>
+                    <li>Tap <kbd>Recall</kbd> to restore it.</li>
                 </ol>
             </section>
 
             <section id="body-measurements">
                 <h2>Body Measurements</h2>
-                <p>Track your body measurements over time:</p>
+                <p class="section-intro">Log and track measurements over time alongside your training.</p>
 
-                <h3>Adding Measurements</h3>
+                <h3>Adding a Measurement</h3>
                 <ol>
-                    <li>From Home, tap <strong>Measurements</strong></li>
-                    <li>Tap the <strong>+</strong> button</li>
-                    <li>Enter:
-                        <ul>
-                            <li><strong>Date</strong> — Date of measurement</li>
-                            <li><strong>Unit</strong> — Inches or centimeters</li>
-                            <li><strong>Body weight unit</strong> — lb or kg</li>
-                            <li><strong>Measurements</strong> — Enter values for any body parts:
-                                <ul>
-                                    <li>Body weight, Waist, Hips, Chest, Shoulders</li>
-                                    <li>Upper arm (relaxed/flexed), Forearm</li>
-                                    <li>Thigh, Calf, Neck</li>
-                                </ul>
-                            </li>
-                            <li><strong>Notes</strong> — Optional notes</li>
-                        </ul>
-                    </li>
-                    <li>Tap <strong>Save</strong></li>
+                    <li>From Home, tap <strong>Measurements</strong>.</li>
+                    <li>Tap <kbd>+</kbd>.</li>
+                    <li>Enter the date, unit (inches or cm), body weight unit, and values for any body parts: weight, waist, hips, chest, shoulders, upper arm, forearm, thigh, calf, neck.</li>
+                    <li>Add optional notes, then tap <kbd>Save</kbd>.</li>
                 </ol>
 
                 <h3>Viewing Progress</h3>
                 <ul>
-                    <li>Each entry shows change vs. previous measurement</li>
+                    <li>Each entry shows change vs. the previous measurement</li>
                     <li>Entries are sorted by date</li>
                     <li>Tap any entry to view details or edit</li>
                 </ul>
@@ -406,74 +383,77 @@
 
             <section id="exercise-catalog">
                 <h2>Exercise Catalog</h2>
-                <p>The exercise catalog is your library of movements. Every exercise you've added to a session — whether picked from suggestions or entered as a custom name — lives here.</p>
+                <p class="section-intro">Manage your library of movements — rename, browse, and review usage.</p>
+                <p>The exercise catalog is your library of movements. Every exercise you've added to a session — from suggestions or entered as a custom name — lives here.</p>
 
                 <h3>Accessing the Catalog</h3>
-                <p>From Home, tap <strong>Exercise catalog</strong></p>
+                <p>From Home, tap <strong>Exercise catalog</strong>.</p>
 
                 <h3>Features</h3>
                 <ul>
                     <li>View all exercises in your library</li>
-                    <li><strong>Tap an exercise</strong> to rename it</li>
-                    <li>Renaming updates the exercise name across all past and future sessions that reference it</li>
+                    <li>Tap an exercise to rename it — the name updates across all past and future sessions that reference it</li>
                     <li>Exercise names must be unique (case-insensitive)</li>
                 </ul>
 
-                <h3>Suggested Exercise Lists</h3>
-                <p>The app suggests exercises for each track when you tap + in a session, based on what you've used there before. To rebuild these suggestions after renaming exercises or changing your exercise habits:</p>
+                <h3>Rebuilding Suggested Exercise Lists</h3>
+                <p>The app suggests exercises for each track based on what you've used there before. To rebuild after renaming exercises or changing habits:</p>
                 <ol>
-                    <li>Go to <strong>Settings → Maintenance</strong></li>
-                    <li>Tap <strong>Rebuild suggested exercise lists from workout history</strong></li>
-                    <li>Confirm when prompted</li>
+                    <li>Go to <strong>Settings → Maintenance</strong>.</li>
+                    <li>Tap <kbd>Rebuild suggested exercise lists from workout history</kbd>.</li>
+                    <li>Confirm when prompted.</li>
                 </ol>
             </section>
 
             <section id="settings">
                 <h2>Settings</h2>
-                <p>Access Settings from the gear icon on the Home screen:</p>
+                <p class="section-intro">Configure weight units, gear inventory, and calendar preferences.</p>
+                <p>Access Settings from the gear icon on the Home screen.</p>
 
                 <h3>Default Weight Unit</h3>
-                <p>Choose LB or KG as the default unit for new exercise entries. You can still override the unit per exercise in the entry editor.</p>
-                <p><strong>Important — unit toggling does not convert numbers.</strong> Switching the unit on an existing entry retags the unit label only. If you have 45 LB and tap the unit chip, it becomes 45 KG — not 20.4 KG. Use this to correct a mislabeled entry. If you need to convert, switch the unit first, then update the number manually.</p>
+                <p>Choose LB or KG as the default for new exercise entries. You can still override the unit per exercise in the entry editor.</p>
+                <div class="warning">
+                    <p><strong>Switching the unit does not convert the number.</strong> Tapping the unit chip retags the label only — 45 LB becomes 45 KG, not 20.4 KG. Use this to correct a mislabeled entry. To convert, switch the unit first, then update the number manually.</p>
+                </div>
 
                 <h3>Workout Calendar</h3>
                 <ul>
                     <li><strong>Show Workout Calendar on Home</strong> — Toggle visibility</li>
-                    <li><strong>Workout type colors</strong> — Customize colors for each workout type</li>
+                    <li><strong>Workout type colors</strong> — Customize the color for each workout type</li>
                 </ul>
 
                 <h3>Gear Setup</h3>
-                <p>Configure your available equipment for the pre-class gear checklist:</p>
+                <p>Configure equipment for the pre-class gear checklist:</p>
                 <ul>
-                    <li><strong>Barbell weight input</strong> — Choose:
-                        <ul>
-                            <li><strong>Per side</strong> — Enter weight per side (e.g., 20 kg per side = 40 kg total)</li>
-                            <li><strong>Total barbell</strong> — Enter the full loaded weight including the bar</li>
-                        </ul>
-                    </li>
-                    <li><strong>Available plates</strong> — Add/remove plate sizes (kg or lb). Add every plate size at your gym.</li>
-                    <li><strong>Available dumbbells</strong> — Add/remove dumbbell weights. These also power the quick-weight chips in the entry editor.</li>
+                    <li><strong>Barbell weight input</strong> — Per side (e.g., 20 kg per side) or Total barbell (full loaded weight)</li>
+                    <li><strong>Available plates</strong> — Add every plate size at your gym</li>
+                    <li><strong>Available dumbbells</strong> — Add dumbbell weights; these also power the quick-weight chips in the entry editor</li>
                 </ul>
 
                 <h3>Maintenance</h3>
                 <ul>
-                    <li><strong>Rebuild suggested exercise lists</strong> — Refresh exercise suggestions based on history</li>
+                    <li><strong>Rebuild suggested exercise lists</strong> — Refresh exercise suggestions based on your history</li>
                 </ul>
             </section>
 
             <section id="exporting-data">
                 <h2>Exporting Data</h2>
-                <p>Export your workout history as CSV for use in spreadsheets:</p>
+                <p class="section-intro">Export your full history as a CSV spreadsheet.</p>
                 <ol>
-                    <li>Go to <strong>View Full History</strong></li>
-                    <li>Tap <strong>Export CSV</strong> in the toolbar</li>
-                    <li>Choose how to share (AirDrop, email, save to Files, etc.)</li>
+                    <li>Go to <kbd>View Full History</kbd>.</li>
+                    <li>Tap <kbd>Export CSV</kbd> in the toolbar.</li>
+                    <li>Choose how to share: AirDrop, email, save to Files, and more.</li>
                 </ol>
-                <p>The CSV includes all workout data organized by session, exercise, weight, effort scores, and notes.</p>
+                <p>The CSV includes all sessions, exercises, weights, effort scores, and notes.</p>
             </section>
 
             <section id="data-management-and-safety">
                 <h2>Data Management and Safety</h2>
+                <p class="section-intro">How data is stored and how to protect it.</p>
+
+                <div class="warning">
+                    <p><strong>PumpTrack stores all data locally on your device.</strong> Until iCloud sync is added, your data is not automatically backed up anywhere else. Export to CSV regularly and save copies to cloud storage.</p>
+                </div>
 
                 <h3>Before You Delete</h3>
                 <ul>
@@ -483,94 +463,138 @@
                 </ul>
 
                 <h3>Recommended Backup Routine</h3>
-                <p>PumpTrack stores all data locally on your device. Until iCloud sync is added, your data lives in the app only and is not automatically backed up. Export regularly:</p>
                 <ol>
-                    <li>Export CSV from <strong>View Full History</strong> once per week (or after major training blocks)</li>
-                    <li>Save the file to cloud storage (iCloud Drive, Google Drive, Dropbox, etc.)</li>
-                    <li>Use a consistent filename like <strong>PumpTrack_YYYY-MM-DD.csv</strong></li>
+                    <li>Export CSV from <kbd>View Full History</kbd> once per week (or after major training blocks).</li>
+                    <li>Save to cloud storage: iCloud Drive, Google Drive, Dropbox, etc.</li>
+                    <li>Use a consistent filename like <strong>PumpTrack_YYYY-MM-DD.csv</strong>.</li>
                 </ol>
 
                 <h3>Data Quality Tips</h3>
                 <ul>
-                    <li>Keep exercise names consistent to improve suggested exercise lists</li>
-                    <li>Avoid duplicate custom names with different capitalization</li>
-                    <li>Run <strong>Rebuild suggested exercise lists</strong> after many exercise renames</li>
+                    <li>Keep exercise names consistent to improve suggested lists</li>
+                    <li>Avoid duplicate names with different capitalization</li>
+                    <li>Run <strong>Rebuild suggested exercise lists</strong> after many renames</li>
                 </ul>
             </section>
 
             <section id="troubleshooting">
                 <h2>Troubleshooting</h2>
+                <p class="section-intro">Solutions to the most common issues.</p>
 
                 <h3>I can't mark an exercise complete</h3>
-                <p>Both weight and effort (1–10) are required. Confirm both are entered. Effort must be a number from 1 to 10.</p>
+                <p>Both weight and effort (1–10) are required. Confirm both are entered — effort must be a number from 1 to 10.</p>
 
                 <h3>Quick-weight chips are missing</h3>
                 <p>Chips appear only for barbell and dumbbell exercises. Check that plates and/or dumbbells are configured in <strong>Settings → Gear Setup</strong>.</p>
 
                 <h3>Previous weights aren't showing</h3>
-                <p>Previous weights are matched by track name and exercise order within that track. If you renamed an exercise, changed the order of exercises, or created a fresh session instead of cloning, the match won't be found. Use <strong>Clone workout</strong> to preserve matching reliably.</p>
+                <p>Weights are matched by track name and exercise order. If you started a fresh session instead of cloning, changed exercise order, or renamed an exercise, the match breaks. Use <kbd>Clone workout</kbd> to preserve matching reliably.</p>
 
-                <h3>The gear checklist is empty or looks wrong</h3>
-                <p>See the <a href="#pre-class-gear-checklist">Pre-Class Gear Checklist</a> section. The most common causes: no gear inventory configured, wrong barbell input mode, or no weights logged yet.</p>
+                <h3>The gear checklist is empty or wrong</h3>
+                <p>See <a href="#pre-class-gear-checklist">Pre-Class Gear Checklist</a>. Most common causes: gear inventory not configured, wrong barbell input mode, or no weights logged yet.</p>
 
                 <h3>A deleted workout is not visible</h3>
-                <p>Go to <strong>View Full History</strong> and enable <strong>Show removed</strong>. If more than 30 days have passed, the item may no longer be recallable.</p>
+                <p>Go to <kbd>View Full History</kbd> and enable <kbd>Show removed</kbd>. If more than 30 days have passed, the workout may no longer be recallable.</p>
 
                 <h3>The unit on an entry looks wrong</h3>
-                <p>Tap the exercise row and use the unit chip in the entry editor to retag it. Note: this changes the label only, not the number. Correct the number manually if needed.</p>
+                <p>Tap the exercise row and use the unit chip to retag it. This changes the label only — update the number manually if needed.</p>
 
                 <h3>Suggested exercises seem outdated</h3>
-                <p>Go to <strong>Settings → Maintenance</strong> and run <strong>Rebuild suggested exercise lists from workout history</strong>.</p>
+                <p>Go to <strong>Settings → Maintenance</strong> and run <kbd>Rebuild suggested exercise lists from workout history</kbd>.</p>
             </section>
 
             <section id="faq">
                 <h2>FAQ</h2>
+                <p class="section-intro">Quick answers to the questions that come up most often.</p>
 
-                <h3>How do I set up for my first BodyPump&reg; class?</h3>
-                <p>Go to <strong>Settings → Gear Setup</strong> first: set your barbell input mode and add your plate and dumbbell sizes. Then create a new BodyPump&reg; session. After your first class, clone that session each week — your exercise order and previous weights carry forward automatically.</p>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>How do I set up for my first BodyPump&reg; class?</summary>
+                        <div class="faq-answer">
+                            <p>Go to <strong>Settings → Gear Setup</strong> first: set your barbell input mode and add your plate and dumbbell sizes. Then create a new BodyPump&reg; session. After your first class, clone it each week — your exercise order and previous weights carry forward automatically.</p>
+                        </div>
+                    </details>
 
-                <h3>Why aren't my previous weights showing?</h3>
-                <p>Weights are matched by track name and exercise position within that track. If you created a fresh session instead of cloning, changed the order of exercises, or renamed an exercise, the match breaks. Always use <strong>Clone workout</strong> to keep history matching reliable.</p>
+                    <details class="faq-item">
+                        <summary>Why aren't my previous weights showing?</summary>
+                        <div class="faq-answer">
+                            <p>Weights are matched by track name and exercise position. If you created a fresh session instead of cloning, changed exercise order, or renamed an exercise, the match breaks. Always use <kbd>Clone workout</kbd> to keep history matching reliable.</p>
+                        </div>
+                    </details>
 
-                <h3>Why can't I mark an exercise complete?</h3>
-                <p>Both weight and effort (1–10) are required. Enter both values and the completion circle becomes tappable.</p>
+                    <details class="faq-item">
+                        <summary>Why can't I mark an exercise complete?</summary>
+                        <div class="faq-answer">
+                            <p>Both weight and effort (1–10) are required. Enter both values and the completion circle becomes tappable.</p>
+                        </div>
+                    </details>
 
-                <h3>I switched the unit from LB to KG and the number looks wrong. What happened?</h3>
-                <p>Switching the unit retags the entry — it doesn't convert the number. 45 LB becomes 45 KG, not 20.4 KG. Tap the unit chip again to switch back, or update the number manually to the correct value.</p>
+                    <details class="faq-item">
+                        <summary>I switched the unit from LB to KG and the number looks wrong. What happened?</summary>
+                        <div class="faq-answer">
+                            <p>Switching the unit retags the entry — it doesn't convert the number. 45 LB becomes 45 KG, not 20.4 KG. Tap the unit chip again to switch back, or update the number manually to the correct converted value.</p>
+                        </div>
+                    </details>
 
-                <h3>The gear checklist looks wrong. What should I check?</h3>
-                <p>First, confirm your plate and dumbbell inventory is set in <strong>Settings → Gear Setup</strong>. Second, check that your barbell input mode (per side vs. total) matches how you enter weights. Exercises with no weight logged don't appear in the checklist.</p>
+                    <details class="faq-item">
+                        <summary>The gear checklist looks wrong. What should I check?</summary>
+                        <div class="faq-answer">
+                            <p>First, confirm your plate and dumbbell inventory is set in <strong>Settings → Gear Setup</strong>. Second, check that your barbell input mode (per side vs. total) matches how you enter weights. Exercises with no weight logged don't appear in the checklist.</p>
+                        </div>
+                    </details>
 
-                <h3>I deleted a workout by accident. Can I recover it?</h3>
-                <p>Yes, within 30 days. Go to <strong>View Full History</strong>, enable <strong>Show removed</strong>, tap the workout, and tap <strong>Recall</strong>.</p>
+                    <details class="faq-item">
+                        <summary>I deleted a workout by accident. Can I recover it?</summary>
+                        <div class="faq-answer">
+                            <p>Yes, within 30 days. Go to <kbd>View Full History</kbd>, enable <kbd>Show removed</kbd>, tap the workout, and tap <kbd>Recall</kbd>.</p>
+                        </div>
+                    </details>
 
-                <h3>Does PumpTrack auto-save?</h3>
-                <p>Yes. Weight, effort, notes, unit changes, and completion state all save automatically as you enter them. You can leave mid-session and everything will be there when you return.</p>
+                    <details class="faq-item">
+                        <summary>Does PumpTrack auto-save?</summary>
+                        <div class="faq-answer">
+                            <p>Yes. Weight, effort, notes, unit changes, and completion state all save automatically. You can leave mid-session and everything will be there when you return.</p>
+                        </div>
+                    </details>
 
-                <h3>Can I use PumpTrack for non-BodyPump&reg; workouts?</h3>
-                <p>Yes. Use <strong>Bodybuilding</strong> for muscle-group-based lifting or <strong>Custom</strong> for anything else. Both support multiple exercises per section and the same weight/effort logging.</p>
+                    <details class="faq-item">
+                        <summary>Can I use PumpTrack for non-BodyPump&reg; workouts?</summary>
+                        <div class="faq-answer">
+                            <p>Yes. Use <strong>Bodybuilding</strong> for muscle-group-based lifting or <strong>Custom</strong> for anything else. Both support multiple exercises per section and the same weight/effort logging.</p>
+                        </div>
+                    </details>
 
-                <h3>What's the fastest way to repeat a workout?</h3>
-                <p>Open the previous workout from Home or History, tap <strong>More...</strong>, and choose <strong>Clone workout</strong>. The clone opens with all your exercises and last week's weights pre-filled.</p>
+                    <details class="faq-item">
+                        <summary>What's the fastest way to repeat a workout?</summary>
+                        <div class="faq-answer">
+                            <p>Open the previous workout from Home or History, tap <kbd>More...</kbd>, and choose <kbd>Clone workout</kbd>. The clone opens with all exercises and last week's weights pre-filled.</p>
+                        </div>
+                    </details>
 
-                <h3>Can I export my data?</h3>
-                <p>Yes. Use <strong>Export CSV</strong> from the full History screen. The file includes all sessions, exercises, weights, effort scores, and notes.</p>
+                    <details class="faq-item">
+                        <summary>Can I export my data?</summary>
+                        <div class="faq-answer">
+                            <p>Yes. Use <kbd>Export CSV</kbd> from the full History screen. The file includes all sessions, exercises, weights, effort scores, and notes.</p>
+                        </div>
+                    </details>
+                </div>
             </section>
 
             <section id="glossary">
                 <h2>Glossary</h2>
+                <p class="section-intro">Definitions for terms used throughout this guide.</p>
                 <dl class="glossary">
                     <dt>Track</dt>
-                    <dd>A named portion of a BodyPump&reg;-style session targeting one body part — for example, Squats, Chest, or Core. Each track is one section in the app.</dd>
+                    <dd>A named portion of a BodyPump&reg;-style session targeting one body part — for example, Squats, Chest, or Core. Each track is one collapsible section in the app.</dd>
 
                     <dt>Block</dt>
-                    <dd>A group of tracks done in sequence without full rest between them, used in BodyPump&reg; Heavy sessions. For example, a block might pair Chest + Back + Squats done three times through before a rest.</dd>
+                    <dd>A group of tracks done in sequence without full rest between them, used in BodyPump&reg; Heavy sessions. For example, Chest + Back + Squats cycled together before a rest.</dd>
 
                     <dt>Entry</dt>
                     <dd>A single logged instance of an exercise in a session — includes weight, unit, effort score, and optional notes.</dd>
 
                     <dt>Effort (RPE 1–10)</dt>
-                    <dd>Rate of Perceived Exertion: your subjective intensity rating, where 1 is barely any effort and 10 is maximum. Both weight and effort are required to mark an exercise complete.</dd>
+                    <dd>Rate of Perceived Exertion: your subjective intensity rating where 1 is barely any effort and 10 is maximum. Both weight and effort are required to mark an exercise complete.</dd>
 
                     <dt>Clone Workout</dt>
                     <dd>Creates a copy of an existing workout with the same exercise structure and previous weights, but with completion cleared. The recommended way to repeat a weekly session.</dd>
@@ -591,7 +615,7 @@
 
             <section id="class-day-quick-reference">
                 <h2>Class-Day Quick Reference</h2>
-                <p>Use this checklist on training day. You can print just this page using the button below.</p>
+                <p class="section-intro">A three-phase checklist for before, during, and after class.</p>
                 <p><button type="button" class="print-btn" onclick="printQuickReference()">Print Quick Reference</button></p>
 
                 <div class="quickref-card">
@@ -600,7 +624,7 @@
                         <li>Open today's session or clone last week's from Home.</li>
                         <li>Expand the <strong>Pre-class gear</strong> checklist at the top of the session.</li>
                         <li>Set out your plates and dumbbells based on the checklist.</li>
-                        <li>Glance at last week's weights to know what you're aiming for.</li>
+                        <li>Glance at last week's weights — know what you're aiming for.</li>
                     </ul>
 
                     <h3>During Class (after each track)</h3>
@@ -612,46 +636,48 @@
 
                     <h3>After Class (2 minutes)</h3>
                     <ul class="tight-list">
-                        <li>Add session notes — what felt strong, what to adjust, any weights to change next time.</li>
-                        <li>Tap <strong>Complete Workout</strong> to lock in the session.</li>
-                        <li>Verify it appears in <strong>View Full History</strong>.</li>
+                        <li>Add session notes — what felt strong, what to adjust, weights to change next week.</li>
+                        <li>Tap <kbd>Complete Workout</kbd> to lock in the session.</li>
+                        <li>Verify it appears in <kbd>View Full History</kbd>.</li>
                     </ul>
                 </div>
             </section>
 
             <section id="tips-and-best-practices">
                 <h2>Tips and Best Practices</h2>
+                <p class="section-intro">Habits that make PumpTrack work better over time.</p>
 
                 <h3>For BodyPump&reg; Classes</h3>
                 <ul>
-                    <li><strong>Clone, don't create.</strong> Use Clone workout each week instead of starting fresh — your exercise order and previous weights carry forward, and previous-weight recall stays reliable.</li>
-                    <li><strong>Log each track when it ends,</strong> not at the end of class. Memory degrades under fatigue; a quick entry right after each track is far more accurate.</li>
-                    <li>Use the <strong>section checkmark</strong> (tap the track header) to complete all exercises in a track at once — faster than tapping each row individually.</li>
+                    <li><strong>Clone, don't create.</strong> Use <kbd>Clone workout</kbd> each week instead of starting fresh — exercise order and previous weights carry forward, and previous-weight recall stays reliable.</li>
+                    <li><strong>Log each track when it ends,</strong> not at the end of class. Memory degrades under fatigue; logging right after each track is far more accurate.</li>
+                    <li>Use the <strong>section checkmark</strong> (tap the track header) to complete all exercises in a track at once.</li>
                     <li>Set up your plate inventory once in Settings so the gear checklist works automatically every week.</li>
                 </ul>
 
                 <h3>For BodyPump&reg; Heavy</h3>
                 <ul>
-                    <li><strong>Design your blocks before class,</strong> not during warm-up. Open the block designer when creating the session.</li>
+                    <li><strong>Design your blocks before class,</strong> not during warm-up — open the block designer when creating the session.</li>
                     <li>The gear checklist is especially useful for Heavy — you'll often need more plate combinations than a standard class.</li>
                     <li>You can redesign blocks from within an open session if the structure changes on the day.</li>
                 </ul>
 
                 <h3>For Bodybuilding</h3>
                 <ul>
-                    <li>Select only the muscle groups you're working that day to keep the session view clean.</li>
-                    <li>Add multiple exercises per body part using the + button in each section.</li>
-                    <li>Use session notes to record supersets, rest times, or anything that doesn't fit in the weight/effort fields.</li>
+                    <li>Select only the muscle groups you're training that day to keep the session view clean.</li>
+                    <li>Add multiple exercises per body part using <kbd>+</kbd> in each section.</li>
+                    <li>Use session notes for supersets, rest times, or anything that doesn't fit in weight/effort fields.</li>
                 </ul>
 
                 <h3>General Tips</h3>
                 <ul>
                     <li>The app auto-saves as you type — no manual save needed.</li>
                     <li>Export CSV regularly and save to cloud storage. Until iCloud sync is added, this is your only backup.</li>
-                    <li>Use the calendar on Home to see your workout frequency at a glance.</li>
                     <li>Effort scores over time tell you whether a weight is getting easier — a clear sign to increase next week.</li>
+                    <li>Use the calendar on Home to see workout frequency at a glance.</li>
                 </ul>
             </section>
+
         </article>
     </main>
 
@@ -670,40 +696,29 @@
             window.print();
         }
 
-        // Close mobile menu when clicking a link
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 document.getElementById('sidebar').classList.remove('active');
             });
         });
 
-        // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
 
-        // Highlight current section in sidebar
         const sections = document.querySelectorAll('main section[id]');
         const navLinks = document.querySelectorAll('.nav-link');
         const linkById = new Map(Array.from(navLinks).map(link => [link.getAttribute('href')?.slice(1), link]));
 
         const observer = new IntersectionObserver((entries) => {
             let activeId = null;
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    activeId = entry.target.id;
-                }
-            });
-
+            entries.forEach(entry => { if (entry.isIntersecting) activeId = entry.target.id; });
             if (activeId) {
                 navLinks.forEach(link => link.classList.remove('active'));
                 const activeLink = linkById.get(activeId);
