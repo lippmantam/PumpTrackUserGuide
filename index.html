@@ -36,6 +36,7 @@
                 <li><a href="#exercise-catalog" class="nav-link">Exercise Catalog</a></li>
 
                 <li class="nav-group-label">Settings &amp; Data</li>
+                <li><a href="#workout-readiness" class="nav-link">Workout Readiness</a></li>
                 <li><a href="#settings" class="nav-link">Settings</a></li>
                 <li><a href="#exporting-data" class="nav-link">Exporting Data</a></li>
                 <li><a href="#data-management-and-safety" class="nav-link">Data Management &amp; Safety</a></li>
@@ -68,6 +69,7 @@
                 <ul>
                     <li><strong>Start New Session</strong> button to begin a workout</li>
                     <li><strong>Recent Sessions</strong> list showing your latest workouts</li>
+                    <li><strong>Today's readiness</strong> card (optional) — effort guidance from Apple Health</li>
                     <li><strong>Navigation links</strong> to About PumpTrack, Workout Calendar, Measurements, View Full History, and Exercise catalog</li>
                 </ul>
 
@@ -405,10 +407,52 @@
                 </ol>
             </section>
 
+            <section id="workout-readiness">
+                <h2>Workout Readiness (Apple Health)</h2>
+                <p class="section-intro">Read-only guidance from Apple Health to help you choose effort (1–10). PumpTrack never writes to Health.</p>
+
+                <h3>What it uses</h3>
+                <ul>
+                    <li><strong>Heart rate variability (HRV)</strong> — compared to your 7-day average</li>
+                    <li><strong>Resting heart rate</strong></li>
+                    <li><strong>Sleep duration</strong> (last night)</li>
+                    <li><strong>Recent workouts</strong> in Apple Health from the last 48 hours (any app — Watch, Fitness+, etc.)</li>
+                </ul>
+
+                <div class="callout">
+                    <p><strong>Apple Watch recommended.</strong> HRV and sleep usually need overnight Watch wear. HRV often appears after your Watch syncs in the morning.</p>
+                </div>
+
+                <h3>Home readiness card</h3>
+                <ol>
+                    <li>On Home, tap <kbd>Connect Apple Health</kbd> (or use <strong>Settings → Workout Readiness</strong>).</li>
+                    <li>Allow read access for the requested types.</li>
+                    <li>Expand the card to see suggested effort (e.g. 6–8) and metric details.</li>
+                </ol>
+                <p>Turn the card off anytime with <strong>Settings → Workout Readiness → Show readiness on Home</strong>.</p>
+
+                <h3>While you train</h3>
+                <ul>
+                    <li><strong>Session banner</strong> — At the top of an open workout, PumpTrack shows today's band and suggested effort range.</li>
+                    <li><strong>Effort picker</strong> — Suggested effort values are outlined in the exercise editor.</li>
+                    <li><strong>At start snapshot</strong> — When you complete the first exercise, HRV / resting HR / sleep are saved and shown under the workout date as <em>At start: …</em>. If data isn't ready yet, tap <kbd>Refresh</kbd>; PumpTrack also retries automatically.</li>
+                </ul>
+
+                <div class="warning">
+                    <p><strong>Training guidance only — not medical advice.</strong> You always choose your own weight and effort; readiness never blocks starting a workout.</p>
+                </div>
+            </section>
+
             <section id="settings">
                 <h2>Settings</h2>
-                <p class="section-intro">Configure weight units, gear inventory, and calendar preferences.</p>
+                <p class="section-intro">Configure weight units, gear inventory, calendar preferences, and Apple Health readiness.</p>
                 <p>Access Settings from the gear icon on the Home screen.</p>
+
+                <h3>Workout Readiness</h3>
+                <ul>
+                    <li><strong>Show readiness on Home</strong> — Toggle the readiness card</li>
+                    <li><strong>Connect Apple Health</strong> — Grant read permissions</li>
+                </ul>
 
                 <h3>Default Weight Unit</h3>
                 <p>Choose LB or KG as the default for new exercise entries. You can still override the unit per exercise in the entry editor.</p>
@@ -444,7 +488,7 @@
                     <li>Tap <kbd>Export CSV</kbd> in the toolbar.</li>
                     <li>Choose how to share: AirDrop, email, save to Files, and more.</li>
                 </ol>
-                <p>The CSV includes all sessions, exercises, weights, effort scores, and notes.</p>
+                <p>The CSV includes all sessions, exercises, weights, effort scores, notes, and session-start readiness fields (HRV, resting HR, sleep) when captured.</p>
             </section>
 
             <section id="data-management-and-safety">
@@ -501,6 +545,12 @@
 
                 <h3>Suggested exercises seem outdated</h3>
                 <p>Go to <strong>Settings → Maintenance</strong> and run <kbd>Rebuild suggested exercise lists from workout history</kbd>.</p>
+
+                <h3>Readiness card is empty or says unavailable</h3>
+                <p>Connect Apple Health in Settings, confirm read permissions, and wear your Apple Watch overnight. Open the Health app to confirm HRV and sleep samples exist. Pull to refresh by leaving Home and returning, or toggle readiness off and on.</p>
+
+                <h3>"At start" metrics never appear on a session</h3>
+                <p>Complete at least one exercise so the session has started, then tap <kbd>Refresh</kbd> under the date. Wait for your Watch to sync if you just finished training.</p>
             </section>
 
             <section id="faq">
@@ -574,7 +624,21 @@
                     <details class="faq-item">
                         <summary>Can I export my data?</summary>
                         <div class="faq-answer">
-                            <p>Yes. Use <kbd>Export CSV</kbd> from the full History screen. The file includes all sessions, exercises, weights, effort scores, and notes.</p>
+                            <p>Yes. Use <kbd>Export CSV</kbd> from the full History screen. The file includes all sessions, exercises, weights, effort scores, notes, and readiness-at-start columns when available.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Does PumpTrack write workouts to Apple Health?</summary>
+                        <div class="faq-answer">
+                            <p>No. Readiness is <strong>read-only</strong>. Your PumpTrack logs stay on your device unless you export CSV.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Why does readiness suggest a lighter day after I already trained?</summary>
+                        <div class="faq-answer">
+                            <p>PumpTrack counts recent workouts saved in Apple Health (last 48 hours), including sessions from other apps. Heavy recent load can lower the suggested effort range even when HRV looks fine.</p>
                         </div>
                     </details>
                 </div>
